@@ -96,7 +96,7 @@ function lightAlert() {
         var array_num = Object.keys(value);
         var info = value[array_num];
 
-        if(info.light_status != "None") {
+        if(info.light_status != "No status") {
             alert(info.light_status);
         }
     })
@@ -112,11 +112,3 @@ function reset() {
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error))
 }
-
-
-
-// window.setInterval(updateMove(), 3000);
-// window.setInterval(movementAlert(), 3000);
-
-// window.setInterval(updateLight(), 3000);
-// window.setInterval(lightAlert(), 3000);
