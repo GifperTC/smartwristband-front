@@ -1,12 +1,15 @@
-.body{
-    margin: 0;
-    padding: 0;
-    background-color: #ffcc26;
-}
+
 .header
 {
     background-color: #ffcc26;
     height: 100vh;
+
+    
+}
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc26;
 }
 .navbar-style{
     background-color: #2a46ad;
@@ -64,6 +67,12 @@ a.btn:hover
     box-shadow: 5px 5px 10px rgb(71, 67, 67);
     transition: 0.3s;
 }
+
+/* Find my wristband */
+#pic1{
+    height: 300px;
+    margin-top: 50px;
+}
 .btn-find{
     background-color: rgb(204, 166, 248);
     color: rgb(41, 31, 19);
@@ -71,7 +80,12 @@ a.btn:hover
     margin: 0px !important;
     width: 500px !important;
     margin-top: 150px !important;
+}
 
+/* Calories */
+#pic2{
+    height: 240px;
+    margin-left: 50px;
 }
 .btn-calo{
 
@@ -82,18 +96,6 @@ a.btn:hover
     width: 400px !important;
     margin-top: 60px !important;
 ;
-
-}
-
-.btn-body{
-
-    background-color: #c1fa76;
-    color: rgb(41, 31, 19);
-    font-size: 20px !important;
-    margin: 0px !important;
-    width: 400px !important;
-    margin-top: 60px !important;
-    margin-left: 60px !important;
 
 }
 

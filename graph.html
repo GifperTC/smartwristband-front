@@ -12,54 +12,6 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script>
-
-
-        function myFunction(n) {
-          var minutes = 1000 * 60;
-          var hours = minutes * 60;
-          var d = new Date();
-          var t= d.getTime();
-        
-          var hour = Math.round((t-n) / hours);
-          var min = Math.round((t-n) / minutes);
-          return hour+":"+min;
-        }
-        
-        function coin(){
-          time = myFunction(1613200539000) 
-          time = time.split(":")
-          coin = 20 * ((time[0]*60)+time[1])
-          return coin 
-        }
-        
-        
-        var active = true;
-        var coin = [{y: 22},{y: 23},{y: 24},{y: 25}] 
-        
-        
-        window.onload = function () {
-        
-          var chart = new CanvasJS.Chart("Graph of motion", {
-            animationEnabled: true,
-            theme: "dark2",
-            title:{
-              text: "Graph of motion"
-            },
-            data: [{        
-              type: "line",
-                  indexLabelFontSize: 16,
-              dataPoints:
-                coin
-            }]
-          });
-          chart.render();
-        
-        }
-        
-        
-        
-        </script>
 </head>
 
 <body>
@@ -85,9 +37,11 @@
 
             </div>
         </nav>
-        <div id="Graph of motion" style="height: 300px; width: 100%;"></div>
+        <!-- <div id="Graph of motion" style="height: 300px; width: 100%;"></div> -->
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <h3>Wait for backend data</h3>
+        <script src="graph.js"></script>
+        <div id="total-cal">total cal</div>
     </header>
 
 </body>
