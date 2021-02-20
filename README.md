@@ -13,6 +13,6 @@ This is the frontend repository for Smart Wristband web application project whic
   -  When user press the button, it will send data to ... 
 - Display calories user have burned at current time
 - Display user's body pose based on the coordinate
-- Display user's motion graph of movements per day
+- Display user's motion graph of calories VS movement time
 - Alert when user's environment is too dark
 - Alert when user's movement is too little
