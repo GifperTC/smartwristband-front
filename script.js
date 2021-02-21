@@ -15,9 +15,9 @@ setInterval(function(){
 setInterval(function(){
     updateLight();
     lightAlert();
-},3000);
+},5000);
 
-setInterval(function(){reset()},5000);
+setInterval(function(){reset()},7000);
 
 function showCal() {
     fetch("http://158.108.182.16:50014/information", {method: "GET"})

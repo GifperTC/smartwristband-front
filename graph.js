@@ -2,8 +2,7 @@ var dps = [{y: 0}];
 
 var updateChart = function () {
 
-    for (var j = 0; j < dps.length; j++) {
-        fetch("http://158.108.182.16:50014/information", {method: "GET"})
+    fetch("http://158.108.182.16:50014/information", {method: "GET"})
         .then((data) => data.json())
         .then((datas) => {
             var value = datas[Object.keys(datas)];
@@ -17,9 +16,8 @@ var updateChart = function () {
 
         })
         .catch((error) => console.log("error", error));
-    }
         
-chart.render();
+    chart.render();
 };
 
 var chart = new CanvasJS.Chart("cal-graph", {
@@ -37,4 +35,4 @@ var chart = new CanvasJS.Chart("cal-graph", {
 });
 chart.render();
 
-setInterval(function(){updateChart();}, 60000);
+setInterval(function(){updateChart()}, 60000);
