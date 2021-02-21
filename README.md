@@ -11,6 +11,6 @@ This is the frontend repository for Smart Wristband web application project whic
 
 - Find my wristband
 - Display calories user have burned at current time
-- Display user's motion graph of calories burned VS movement
+- Display user's motion graph of calories burned for each movement
 - Notify when user's environment is too dark or too bright.
 - Notify when user's movement status is abnormal.
